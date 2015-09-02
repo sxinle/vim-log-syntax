@@ -25,7 +25,7 @@ hi def link log_error 		ErrorMsg
 hi def link log_warning 	WarningMsg
 
 hi def link log_pkgname 	PreCondit
-hi def link log_info 	    TypeDef
+hi def link log_info 	    CursorLineNr
 
 
 let b:current_syntax = "log"
