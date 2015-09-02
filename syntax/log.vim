@@ -8,7 +8,8 @@ syn region log_string 	start=/'/ end=/'/ end=/$/ skip=/\\./
 syn region log_string 	start=/"/ end=/"/ skip=/\\./
 syn match log_number 	'0x[0-9a-fA-F]*\|\[<[0-9a-f]\+>\]\|\<\d[0-9a-fA-F]*'
 
-syn match log_pkgname 	'\[.*\] -'
+syn match log_pkgname 	/\[.\{-2,}\] /
+syn match log_info 	/- .*/
 
 syn match   log_date '\(Jan\|Feb\|Mar\|Apr\|May\|Jun\|Jul\|Aug\|Sep\|Oct\|Nov\|Dec\) [ 0-9]\d *'
 syn match   log_date '\d\{4}-\d\d-\d\d'
@@ -23,7 +24,8 @@ hi def link log_time 		Type
 hi def link log_error 		ErrorMsg
 hi def link log_warning 	WarningMsg
 
-hi def link log_pkgname 	Pmenu
+hi def link log_pkgname 	PreCondit
+hi def link log_info 	    TypeDef
 
 
 let b:current_syntax = "log"
