@@ -29,4 +29,8 @@ hi def link log_pkgname 	PreCondit
 hi def link log_info 	    CursorLineNr
 
 
+syn match log_error_custom 'Caused by:.*'
+hi def link log_error_custom 		Cursor
+
+
 let b:current_syntax = "log"
