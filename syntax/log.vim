@@ -30,6 +30,7 @@ hi def link log_info 	    CursorLineNr
 
 
 syn match log_error_custom 'Caused by:.*'
+syn match log_error_custom 'java.lang.*Exception.*'
 hi def link log_error_custom 		Cursor
 
 
